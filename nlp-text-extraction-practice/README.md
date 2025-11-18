@@ -31,7 +31,7 @@ Covers making HTTP GET requests with custom headers and reading API responses.
 ### **4️⃣ 04_api_error_handling.ipynb**  
 **Summary:** Handling common API request errors.  
 **Description:**  
-Explains how to detect status codes such as `429 Too Many Requests`, use `Retry-After`, and safely retry failed requests.
+Explains how to detect status codes such as `429 Too Many Requests`, use the `Retry-After` header, and safely retry failed requests.
 
 ---
 
@@ -42,29 +42,29 @@ Demonstrates how to pass key–value parameters using the `params` argument in `
 
 ---
 
-### **6️⃣ wordcloud.ipynb**  
-**Summary:** Creating a word cloud from text.  
+### **6️⃣ 06_api_with_params_universities.ipynb**  
+**Summary:** API request with query parameters using the Universities API.  
 **Description:**  
-Uses the `wordcloud` and `matplotlib` libraries to visualize the most frequent words in a text.
+This notebook demonstrates how to send an HTTP GET request with parameters using the `requests` library.  
+It sends a search query to the Universities API with filters for country and name, prints the final resolved URL, and displays the number of matching universities returned by the API.
 
 ---
 
 ## 🛠 Required Libraries
+
+```bash
 pip install requests
 pip install beautifulsoup4
 pip install urllib3
 pip install wordcloud
 pip install matplotlib
 
+🚀 How to Use
 
----
+Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab.
 
-## 🚀 How to Use
+Run the cells step by step to follow each text extraction technique.
 
-1. Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab.  
-2. Run the cells step by step to follow each text extraction technique.
+🙌 Author
 
----
-
-## 🙌 Author  
 fatsedz — Learning NLP with Python
