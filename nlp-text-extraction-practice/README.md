@@ -50,6 +50,21 @@ It sends a search query to the Universities API with filters for country and nam
 
 ---
 
+### **7️⃣ 07_uci_student_performance_download.ipynb**  
+**Summary:** Downloading datasets from the UCI Machine Learning Repository.  
+**Description:**  
+Demonstrates how to download a ZIP dataset directly from the UCI repository using `urllib.request`.  
+Retrieves the "Student Performance" dataset and saves it locally for further processing.
+
+---
+
+### **8️⃣ 08_kaggle_api_mobile_reviews.ipynb**  
+**Summary:** Introduction to downloading datasets using the Kaggle API.  
+**Description:**  
+Shows the initial setup required to use the Kaggle API for dataset downloads, focusing on mobile review datasets.
+
+---
+
 ## 🛠 Required Libraries
 
 ```bash
@@ -58,6 +73,7 @@ pip install beautifulsoup4
 pip install urllib3
 pip install wordcloud
 pip install matplotlib
+
 
 🚀 How to Use
 
