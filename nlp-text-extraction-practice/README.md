@@ -73,8 +73,8 @@ pip install beautifulsoup4
 pip install urllib3
 pip install wordcloud
 pip install matplotlib
-
-
+```
+```bash
 🚀 How to Use
 
 Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab.
@@ -84,3 +84,4 @@ Run the cells step by step to follow each text extraction technique.
 🙌 Author
 
 fatsedz — Learning NLP with Python
+```
