@@ -1,92 +1,38 @@
-# 🧩 03 — Vectorization  
-This folder contains all fundamental methods for converting text into numerical
-representations. Vectorization is the core step in every NLP pipeline, and here
-we explore techniques ranging from simple word encodings (One-Hot) to more
-advanced feature extraction methods (TF–IDF).
+# 04 — Text Vectorization
 
----
+This folder contains notebooks for converting text into numerical features that can be used in machine learning models.
 
-## 📂 Notebook Overview
+## Notebooks
 
-### 1️⃣ **01_one_hot_encoding.ipynb**
-This notebook covers:
-- Creating a vocabulary from text  
-- Converting tokens into One-Hot vectors  
-- Limitations of One-Hot (sparse vectors, no semantic meaning)
+- `01_one_hot_encoding.ipynb` — introduces One-Hot Encoding
+- `02_bow_countvectorizer.ipynb` — creates Bag of Words representations with CountVectorizer
+- `03_tfidf_vectorizer.ipynb` — creates TF-IDF features
+- `04_compare_bow_tfidf.ipynb` — compares Bag of Words and TF-IDF in a text classification task
+- `05_brown_corpus_practice.ipynb` — applies preprocessing, TF-IDF, and classification to text from the Brown Corpus
 
-**Good for:** building basic intuition on how text becomes numbers.
+## Topics Covered
 
----
+- One-Hot Encoding
+- Bag of Words
+- Document–Term Matrix
+- TF-IDF
+- Text preprocessing
+- Feature extraction
+- Naive Bayes classification
+- Model evaluation
 
-### 2️⃣ **02_bow_countvectorizer.ipynb**
-In this notebook you will learn:
-- How Bag of Words (BoW) works  
-- Building a Document–Term Matrix  
-- Using `CountVectorizer` from scikit-learn  
-- Visualizing the matrix with pandas DataFrame  
+## Tools
 
-**Pros:** simple and fast  
-**Cons:** ignores word meaning and order.
+- Python
+- Jupyter Notebook / Google Colab
+- scikit-learn
+- spaCy
+- pandas
+- Kaggle API
 
----
+## How to Run
 
-### 3️⃣ **03_tfidf_vectorizer.ipynb**
-This notebook introduces:
-- The concept of Term Frequency (TF) and Inverse Document Frequency (IDF)  
-- How TF–IDF reduces the importance of common words  
-- Generating TF–IDF vectors using `TfidfVectorizer`  
-- Identifying the most important terms in a document  
-
-TF–IDF usually outperforms BoW in most text-classification tasks.
-
----
-
-### 4️⃣ **04_compare_bow_tfidf.ipynb**
-This notebook provides a practical comparison of BoW vs TF–IDF:
-- A small sentiment dataset (positive/negative sentences)  
-- Training a Naive Bayes classifier using:
-  - Bag of Words  
-  - TF–IDF  
-- Comparing accuracy and behavior of both models  
-
-Great for understanding how vectorization impacts model performance.
-
----
-
-### 5️⃣ **05_brown_corpus_practice.ipynb**
-This is the main practice notebook of this folder.
-
-It includes:
-- Downloading the **Brown Corpus** from Kaggle  
-- Extracting two categories:
-  - `cf` → humor  
-  - `cs` → science_fiction  
-- Text preprocessing with spaCy:
-  - Tokenization  
-  - Lemmatization  
-  - Removing stopwords & punctuation  
-- TF–IDF vectorization  
-- Training a Naive Bayes classifier  
-- Detailed evaluation using `classification_report`
-
-This notebook demonstrates a **complete NLP pipeline** from raw text to model evaluation.
-
----
-
-## 🚀 How to Run the Notebooks
-All notebooks are tested in **Google Colab**.
-
-1. Open the notebook in Colab  
-2. Run the cells from top to bottom  
-3. If a notebook requires Kaggle datasets, upload your `kaggle.json`  
-4. Install dependencies when prompted  
-
----
-
-## 📦 Requirements
-
-```bash
-pip install scikit-learn
-pip install spacy
-pip install kaggle
-python -m spacy download en_core_web_sm
+1. Open a notebook in Jupyter Notebook or Google Colab.
+2. Install the required libraries if needed.
+3. Download or upload the required dataset locally.
+4. Run the cells from top to bottom.
