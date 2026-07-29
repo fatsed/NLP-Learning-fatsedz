@@ -5,7 +5,7 @@ This folder contains practice notebooks for extracting text and data from websit
 ## Notebooks
 
 - `01_text_url.ipynb` — extracts text from a web page
-- `02_web_scrapping.ipynb` — practices basic web scraping
+- `02_web_scraping.ipynb` — practices basic web scraping
 - `03_api_request_urllib3.ipynb` — sends API requests with urllib3
 - `04_api_error_handling.ipynb` — handles common API errors
 - `05_api_with_params.ipynb` — sends API requests with parameters
