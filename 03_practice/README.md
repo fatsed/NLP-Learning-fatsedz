@@ -6,7 +6,7 @@ This folder contains practice notebooks that combine several Natural Language Pr
 
 - `01_news_nlp_pipeline.ipynb` — extracts and processes technology news using a basic NLP pipeline
 - `02_top_words_similarity_gensim.ipynb` — explores word frequency and semantic similarity with Gensim
-- `03_persian_preprocess_ner_freq (1).ipynb` — preprocesses Persian text and analyzes named entities and word frequency
+- `03_persian_preprocess_ner_freq.ipynb` — preprocesses Persian text and analyzes named entities and word frequency
 
 ## Topics Covered
 
