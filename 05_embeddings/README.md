@@ -1,109 +1,42 @@
-# 🔷 Similarity & Distance in NLP  
-This folder contains a complete set of notebooks demonstrating different similarity and distance metrics used in Natural Language Processing (NLP), including string similarity, word similarity using Word2Vec, sentence similarity, and visualization techniques.
+# 05 — Embeddings and Similarity
 
-These notebooks are designed for both learning and practical implementation.
+This folder contains practice notebooks for representing words as vectors and measuring similarity between words and sentences.
 
----
+## Notebook
 
-## 📁 Contents
+- `04_similarity_distance.ipynb` — explores word embeddings, similarity measures, distance metrics, and visualizations using Persian text
 
-### **1️⃣ Word Similarity (Word2Vec)**
-- Training a Persian Word2Vec model using Gensim  
-- Computing similarity between word vectors  
-- Cosine similarity  
-- Euclidean distance  
-- Manhattan distance  
-- Visualization of word distances using t-SNE (with correct Persian rendering)
+## Topics Covered
 
-Notebook:  
-`04_similarity_distance.ipynb`
+- Word2Vec embeddings
+- Cosine similarity
+- Euclidean distance
+- Manhattan distance
+- Levenshtein distance
+- Jaccard similarity
+- Fuzzy string matching
+- Sentence similarity
+- Visualizing word embeddings with t-SNE
+- Persian text visualization
 
----
+## Tools
 
-## 📌 Key Concepts Covered
+- Python
+- Jupyter Notebook / Google Colab
+- Gensim
+- Hazm
+- NumPy
+- scikit-learn
+- Matplotlib
+- seaborn
+- fuzzywuzzy
+- python-Levenshtein
+- arabic-reshaper
+- python-bidi
 
-### **✔ Cosine Similarity**
-Measures the angle between two vectors:
-\[
-\text{cosine}(a,b) = \frac{a \cdot b}{\|a\| \|b\|}
-\]
+## How to Run
 
-Used to find semantic similarity between words and sentences.
-
----
-
-### **✔ Euclidean Distance**
-Direct geometric distance between vectors:
-\[
-d(a,b) = \|a - b\|
-\]
-
----
-
-### **✔ Manhattan Distance**
-Sum of absolute differences between two vectors.
-
----
-
-### **✔ Levenshtein Distance (Edit Distance)**
-The minimum number of insertions, deletions, or substitutions required to transform one word into another.
-
-Examples:
-- "کتاب" ↔ "کباب"
-- "سلام" ↔ "سالم"
-
----
-
-### **✔ Fuzzy String Matching**
-Using `fuzzywuzzy` to compute similarity between noisy or misspelled strings.
-
----
-
-### **✔ Jaccard Similarity**
-Used to compare sets of tokens:
-\[
-J(A,B) = \frac{|A \cap B|}{|A \cup B|}
-\]
-Great for measuring similarity between short text or sentences.
-
----
-
-### **✔ Sentence Similarity (Embedding-Based)**
-Each sentence is converted into a vector by averaging its word embeddings.  
-Then cosine similarity is used to measure semantic closeness.
-
-Included:
-- Heatmap of sentence similarity matrix
-- Color visualization using seaborn
-
----
-
-### **✔ t-SNE Visualization**
-A 2-D visualization of word embeddings for understanding semantic clusters.  
-Supports **Persian text** using:
-- `arabic_reshaper`
-- `python-bidi`
-- `DejaVu Sans` font  
-
-Output: scatter plot of semantic word groups.
-
----
-
-## 🧠 Requirements
-
-These notebooks use:
-- `gensim`
-- `hazm`
-- `numpy`
-- `scikit-learn`
-- `seaborn`
-- `matplotlib`
-- `python-Levenshtein`
-- `fuzzywuzzy`
-- `arabic-reshaper`
-- `python-bidi`
-
-All dependencies can be installed with:
-
-```bash
-pip install gensim hazm python-Levenshtein fuzzywuzzy arabic-reshaper python-bidi seaborn
+1. Open the notebook in Jupyter Notebook or Google Colab.
+2. Install the required libraries if needed.
+3. Upload or load the required text data.
+4. Run the cells from top to bottom.
