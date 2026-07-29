@@ -1,114 +1,41 @@
-# 🧹 NLP Text Cleaning & Preprocessing Practice
+# 02 — Text Cleaning and Preprocessing
 
-This folder contains a series of Jupyter notebooks designed to practice fundamental text preprocessing and basic NLP techniques in both **English** and **Persian**.  
-The exercises start from simple text cleaning and gradually build up to full mini–pipelines with vectorization.
+This folder contains practice notebooks for cleaning and preprocessing English and Persian text.
 
----
+## Notebooks
 
-## 📂 Notebooks Overview
+- `01_basic_cleaning.ipynb` — removes punctuation, numbers, extra spaces, and unwanted characters
+- `02_tokenize_stopwords.ipynb` — tokenizes English text and removes stopwords
+- `03_stem_lemma.ipynb` — compares stemming and lemmatization
+- `04_ngrams_pos_ner.ipynb` — works with n-grams, POS tagging, and named entities
+- `05_vectorization.ipynb` — converts cleaned text into numerical representations
+- `06_final_practice_en.ipynb` — combines the main preprocessing steps in an English NLP pipeline
+- `07_final_practice_fa.ipynb` — applies preprocessing and vectorization to Persian text
 
-### 1️⃣ `01_basic_cleaning.ipynb`  
-**Topic:** Basic text cleaning  
-**Highlights:**  
-- Load raw text from a `.txt` file  
-- Remove punctuation, newlines, digits  
-- Normalize whitespace and produce a cleaned text string  
+## Topics Covered
 
----
+- Text cleaning and normalization
+- Tokenization
+- Stopword removal
+- Stemming and lemmatization
+- N-grams
+- Part-of-Speech tagging
+- Named Entity Recognition
+- English and Persian text processing
 
-### 2️⃣ `02_tokenize_stopwords.ipynb`  
-**Topic:** Tokenization & stopword removal (English)  
-**Highlights:**  
-- Sentence and word tokenization (NLTK)  
-- English stopwords with `nltk.corpus.stopwords`  
-- Compare tokens before and after stopword filtering  
+## Tools
 
----
+- Python
+- Jupyter Notebook / Google Colab
+- NLTK
+- Hazm
+- scikit-learn
+- Requests
+- BeautifulSoup
 
-### 3️⃣ `03_stem_lemma.ipynb`  
-**Topic:** Stemming vs lemmatization  
-**Highlights:**  
-- Porter & Snowball stemmers  
-- WordNet lemmatizer  
-- Side–by–side comparison of `original | stem | lemma`  
+## How to Run
 
----
-
-### 4️⃣ `04_ngrams_pos_ner.ipynb`  
-**Topic:** N-grams, POS tagging and (English) NER  
-**Highlights:**  
-- Unigrams, bigrams, trigrams with NLTK  
-- POS tagging and short explanation of POS tags  
-- (Optional) Named Entity Recognition using `ne_chunk`  
-
----
-
-### 5️⃣ `05_vectorization.ipynb`  
-**Topic:** Text vectorization  
-**Highlights:**  
-- Bag-of-words with scikit-learn `CountVectorizer`  
-- Keras `Tokenizer` and count matrix  
-- Compare vocabulary and matrix shape across methods  
-
----
-
-### 6️⃣ `06_final_practice_en.ipynb`  
-**Topic:** Final English pipeline  
-**Highlights:**  
-- End-to-end English text pipeline:
-  cleaning → tokenization → stopwords → stem/lemma → n-grams → POS/NER → vectorization  
-- Small analysis questions at the end  
-
----
-
-### 7️⃣ `07_final_practice_fa.ipynb`  
-**Topic:** Final Persian pipeline (web text)  
-**Highlights:**  
-- Fetch a Persian article (e.g., from Wikipedia) with `requests` + `BeautifulSoup`  
-- Normalize & clean text using Hazm  
-- Persian tokenization and stopword removal  
-- Stemming & lemmatization in Hazm  
-- Persian n-gram analysis  
-- Vectorization with `CountVectorizer` (custom Hazm tokenizer) and Keras `Tokenizer`  
-
----
-
-## ⚙️ Requirements
-
-Main Python packages used in these notebooks:
-
-- `nltk`
-- `scikit-learn`
-- `tensorflow` / `keras`
-- `hazm`
-- `requests`
-- `beautifulsoup4`
-- `gensim` (optional, depending on your environment)
-- `fasttext`, `flashtext` (optional, some installs)
-
-NLTK resources (run once in a separate cell):
-
-```python
-import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-nltk.download('averaged_perceptron_tagger_eng')
-nltk.download('maxent_ne_chunker')
-nltk.download('maxent_ne_chunker_tab')
-nltk.download('words')
-```
-For Persian processing, install Hazm (no deps):
-```
-!pip install hazm --no-deps
-```
-🚀 Suggested Order of Study
-
-Start with 01_basic_cleaning.ipynb and 02_tokenize_stopwords.ipynb
-Continue with 03_stem_lemma.ipynb
-Move to 04_ngrams_pos_ner.ipynb and 05_vectorization.ipynb
-Finish with the two final practice notebooks:
-06_final_practice_en.ipynb (English)
-07_final_practice_fa.ipynb (Persian)
+1. Open a notebook in Jupyter Notebook or Google Colab.
+2. Install the required libraries if needed.
+3. Download any required NLTK resources.
+4. Run the cells from top to bottom.
