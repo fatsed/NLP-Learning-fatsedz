@@ -59,7 +59,7 @@ Private files and API credentials, such as `kaggle.json`, should not be added to
 
 ## About This Repository
 
-This is a learning repository, so some notebooks are simple exercises while others combine several NLP steps into a small project. I plan to improve and organize the notebooks as I continue learning.
+This is a learning repository, so some notebooks are introductory exercises while others combine several NLP steps into small course projects.
 
 ## License
 

@@ -4,7 +4,7 @@ This folder contains an introductory notebook for creating and displaying word c
 
 ## Notebook
 
-- `wordcloud (1).ipynb` — creates a word cloud using Python and displays the result with Matplotlib.
+- `01_wordcloud.ipynb` — creates a word cloud using Python and displays the result with Matplotlib.
 
 ## Topics Covered
 
